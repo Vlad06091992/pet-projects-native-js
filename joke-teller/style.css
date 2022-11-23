@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: #45badd;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url('./robot.gif');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain; /*подгонка размера с сохранением пропорций */
+    
+}
+
+.button{
+    background: #ff3482;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    border:none;
+    box-shadow: 2px 2px 20px 10px rgba(0,0,0,0.2);
+}
+
+.button:hover{
+    cursor: pointer;
+    filter: brightness(96%);
+}
+
+.button:disabled{
+    cursor: none;
+    filter: brightness(30%);
+}
+
+
+.button:active{
+    transform: scale(98%);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .container {
+        background-size: cover; /*сохранение размера картинки */
+        
+        background-position: center;
+    }
+
+    .button{
+        box-shadow: 5px 5px 30px 20px rgba(0,0,0,0.2);
+    }
+}

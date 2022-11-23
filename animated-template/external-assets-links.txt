@@ -1,0 +1,27 @@
+
+056 Animated-Template-Live-Demo
+https://jacintodesign.github.io/animated-template/
+
+057 Creative-Tim-Template
+https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation
+
+057 HTML-Formatter
+https://htmlformatter.com/
+
+058 FontAwesome-Icons
+https://fontawesome.com/icons?d=gallery&q=close&m=free
+
+058 Unsplash-Images
+https://unsplash.com/
+
+058 Random-User-Images
+https://randomuser.me/
+
+059 Animate-on-Scroll-Library
+https://michalsnik.github.io/aos/
+
+059 Google-Loading-Third-Party-Script
+https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript
+
+061 Async-Defer-Visualized
+https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript#use_async_or_defer
