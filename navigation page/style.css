@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root {
+    --primaryColor: #fff;
+    --navColor1: #21292c;
+    --navColor2: #aa3e39;
+    --navColor3: #aa6e39;
+    --navColor4: #236267;
+    --navColor5: #2c8437;
+}
+
+.overlayMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    height: 20%;
+    width: 100%;
+    list-style: none;
+}
+
+nav li a {
+    color: var(--primaryColor);
+    letter-spacing: 4px;
+    position: relative;
+    top: 45%;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    scale: 120%;
+}
+
+nav li a::before {
+    position: absolute;
+    left: 0;
+    top: 47.5%;
+    height: 3px;
+    width: 25vw;
+    content: "";
+    background: var(--primaryColor);
+    opacity: 0;
+}
+
+nav li a:hover::before {
+    opacity: 1;
+}
+
+nav li:nth-of-type(1) {
+    background: var(--navColor1);
+}
+
+nav li:nth-of-type(2) {
+    background: var(--navColor2);
+}
+
+nav li:nth-of-type(3) {
+    background: var(--navColor3);
+}
+
+nav li:nth-of-type(4) {
+    background: var(--navColor4);
+}
+
+nav li:nth-of-type(5) {
+    background: var(--navColor5);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: var(--primaryColor)
+}
+
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home a {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    text-decoration: none;
+    color: var(--primaryColor);
+    border-bottom: 1px solid var(--primaryColor);
+    font-size: 18px;
+    padding-bottom: 5px;
+
+}
+
+#home {
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1669394367856-30500a8c06d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80");
+    background-position: 50% 67%;
+}
+
+
+#about {
+    background: var(--navColor2);
+
+}
+
+#projects {
+    background: var(--navColor3);
+
+}
+
+#skills {
+    background: var(--navColor4);
+
+}
+
+#contact {
+    background: var(--navColor5);
+
+}
