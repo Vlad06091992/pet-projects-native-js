@@ -116,19 +116,12 @@ audio.addEventListener('timeupdate', (e) => {
 
 
     function setProgressBar(e) {
-    
-
-audio.addEventListener('loadedmetadata',()=>{
         const width = this.clientWidth;
         const clickX = e.offsetX;
         const { duration } = audio;
         audio.currentTime = (clickX / width) * duration;
+    }
 
-})
-
-      }
-
-
-    progressContainer.addEventListener('click',setProgressBar)
+    progressContainer.addEventListener('click', setProgressBar)
 
 })
