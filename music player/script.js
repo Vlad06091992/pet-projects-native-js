@@ -50,16 +50,14 @@ function play() {
 
 function playNextSong() {
     currentSongIndex >= songs.length - 1 ? currentSongIndex = 0 : currentSongIndex++
+
     loadSong()
-
     play()
-
 }
 
 function playPrevSong() {
     currentSongIndex < 1 ? currentSongIndex = songs.length - 1 : currentSongIndex--
     loadSong()
-
     play()
 }
 
@@ -74,6 +72,7 @@ function loadSong() {
     title.innerHTML = songs[currentSongIndex].displayName
     artist.innerHTML = songs[currentSongIndex].artist
     splashScreen.src = `./img/${songs[currentSongIndex].name}.jpg`
+
 }
 
 
@@ -119,9 +118,12 @@ audio.addEventListener('timeupdate', (e) => {
         const width = this.clientWidth;
         const clickX = e.offsetX;
         const { duration } = audio;
-        audio.currentTime = (clickX / width) * duration;
+        if (duration) {
+            audio.currentTime = (clickX / width) * duration;
+        }
     }
-
     progressContainer.addEventListener('click', setProgressBar)
 
 })
+
+audio.addEventListener('ended', playNextSong)
