@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Custom countdown</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video class="video_background" autoplay loop muted>
+        <source src="./time.mp4">
+    </video>
+    <div class="video_overlay"></div>
+    <div class="container">
+        <!-- countdown input -->
+        <div class="container-input" >
+            <h1>Create custom countdown!</h1>
+            <label for="title">
+                <h2>Title</h2>
+                <input  id="title" type="text">
+            </label>
+            <label for="date-picker">
+                <h2>Select a date</h2>
+                <input id="date-picker" type="date">
+            </label>
+            <button class="submit" style="display: block;">submit</button>
+        </div>
+
+        <!-- countdown -->
+        <div class="countdown" hidden>
+
+<h2 class = beforeEvent></h2>
+
+            <ul>
+                <li>
+                    <div class="days"></div>Days
+                </li>
+                <li>
+                    <div class="hours"></div>Hours
+                </li>
+                <li>
+                    <div class="minutes"></div>Minutes
+                </li>
+                <li>
+                    <div class="seconds"></div>Seconds
+                </li>
+            </ul>
+            <button class = 'reset' style="display: block;">reset</button>
+        </div>
+        <!-- complete -->
+        <div class="complete" hidden>
+            <h1 class="completed">Countdown complete!</h1>
+            <h2 class="h1 h1_complete">Countdown finished on 05-05-2020</h2>
+            <button class="new-countdown-button">New countdown</button>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

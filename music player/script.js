@@ -118,6 +118,7 @@ audio.addEventListener('timeupdate', (e) => {
         const width = this.clientWidth;
         const clickX = e.offsetX;
         const { duration } = audio;
+        console.dir(audio)
         if (duration) {
             audio.currentTime = (clickX / width) * duration;
         }

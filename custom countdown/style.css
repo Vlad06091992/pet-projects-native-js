@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* width: 100vw; */
+  font-family: 'Nunito', sans-serif;
+  height: 100vh;
+}
+
+h1,
+.h1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.video_background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.video_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+
+.container {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 1;
+  padding: 25px 40px;
+}
+
+input {
+  font-size: 20px;
+  border: 1px solid #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px
+}
+
+button {
+  border: 1px solid #ccc;
+  position: relative;
+  left: -12px;
+  margin: 25px auto;
+  width: 95%;
+  height: 46px;
+  border-radius: 20px;
+  background: #006959;
+  color: white;
+  text-transform: uppercase;
+}
+
+button:hover {
+  filter: brightness(110%);
+  cursor: pointer
+}
+
+button:active {
+  scale: 105%
+}
+
+.countdown,.complete {
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  display: block;
+  align-items: center;
+}
+
+.countdown li {
+  margin: 0 5px;
+  font-size: 35px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.countdown button,.complete button {
+  position: static;
+  width: 100%;
+}
+
+li div {
+  text-align: center;
+  font-size: 60px;
+}
+
+.countdown span {
+  font-size: 20px
+}
+
+.completed {
+  animation: 4s completed infinite
+}
+
+@keyframes completed {
+  0% {
+    color: red
+  }
+
+  25% {
+    color: yellow
+  }
+
+  50% {
+    color: orange;
+    scale: 150%;
+    
+  }
+
+  75% {
+    color: greenyellow
+  }
+
+  100% {
+    color: blue
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap");
+
+
+
+@media screen and (max-width: 645px) {
+  .video_background {
+    object-position: 70%;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    margin: 0;
+    padding: 10px 20px;
+    min-width: 400px;
+    width: 90%;
+  }
+}
